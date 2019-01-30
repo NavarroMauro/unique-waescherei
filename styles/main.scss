@@ -1,8 +1,43 @@
-// div.collapse {
-//
-//   ul {
-//     border: 2px solid red;
-//     display: flex !important;
-//     justify-content: space-around !important;
-//   }
-// }
+
+body {
+
+// WÄSCHEREI title
+  div.waescherei {
+    font-size: 2.5vw;
+
+    @media screen and (max-width: 600px) {
+    font-size: 4.5vw;
+    }
+  }
+
+
+  div.main-6-level {
+
+
+    // first-3-steps
+     div.first-3-level {
+
+       div div.image {
+          height: 30vw;
+
+          @media screen and (max-width: 600px) {
+            height: 55vw;
+          }
+       }
+     }
+  }
+
+
+
+  // starting six steps main title
+  div.six-steps-title {
+    padding: 2vw 0;
+  }
+
+  // starting carousel section
+  div.myMainCarousel {
+    display: none;
+    
+  }
+
+}

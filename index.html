@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Unique Teppisch Waescherei</title>
+  <link rel="stylesheet" href="styles/main.css" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
@@ -25,7 +26,7 @@
     <div class="icon col-lg-6 col-sm-12">
       <img src="https://quirky-mclean-307ccb.netlify.com/images/unique_logo_long.svg" alt="">
     </div>
-    <div class="waescherei col-lg-6 col-sm-12 text-danger" style="font-size: 2.5vw;">WÄSCHEREI</div>
+    <div class="waescherei col-lg-6 col-sm-12 text-danger">WÄSCHEREI</div>
   </div>
 
 
@@ -79,26 +80,114 @@
 </div>
 
 
+<!-- starting fist 3 level section -->
+<div class="main-6-level row d-flex justify-content-center flex-direction-coloumn border border-danger">
+  <div class="main 6-level-text col-lg-11 col-sm-10 text-center six-steps-title">
+    <h5>IN SECHS SCHRITTEN WIRD IHR <b>TEPPICH</b> BEI UNS WIEDER SAUBER:</h5>
+  </div><br />
+
+  <div class="first-3-level col-lg-11 d-flex justify-content-around row border border-info">
+    <div class="first col-lg-4 col-sm-11">
+      <div class="image flecken">
+        <img style="width: 100%; height: 100%" src="teppisch-images/Flecken-entfernen/cup.jpeg" alt="" class="first">
+      </div>
+      <p class="first">
+        Flecken entfernen:<br />
+
+        Hartnäckige Flecken können Sie uns überlassen.
+        Experten die Reinigung und Restauration
+        <!-- Wenn Ihr Orientteppich befleckt ist und Sie nicht wissen, wie Sie hartnäckige oder schwierige Flecken wieder entfernen können,
+        sollten Sie uns als Experten die Reinigung und Restauration von Teppichen überlassen -->
+      </p>
+    </div>
+    <div class="second col-lg-4 col-sm-11">
+      <div class="image reparatur" identifier="reparatur">
+        <img style="width: 100%; height: 100%" src="teppisch-images/Reparatur/knife-repair.jpeg" alt="" class="second">
+      </div>
+      <p class="second">
+        Reparatur:<br />
+
+        In unsere hauseigenen Teppich_Werkstatt werden alle Arten von Reparaturen und Restaurationen fachmännisch ausgeführt.
+      </p>
+    </div>
+    <div class="third col-lg-4 col-sm-11">
+      <div class="image wash" identifier="wash">
+        <img style="width: 100%; height: 100%" src="teppisch-images/Wäscherei/wash-tide.jpeg" alt="" class="third">
+      </div>
+      <p class="third">
+        Wäscherei:<br />
+
+        Zur schonenden und professionellen Teppichreinigung gehört bei uns die Handwäsche_und noch eigenes mehr.
+      </p>
+    </div>
+  </div>
+
+
+<!-- second three steps -->
+  <div class="first-3-level col-lg-11 d-flex justify-content-around row border border-info">
+    <div class="first col-lg-4 col-sm-11">
+      <div class="image">
+        <img style="width: 100%; height: 100%" src="teppisch-images/Wäscherei/wash-machine.jpeg" alt="" class="first">
+      </div>
+      <p class="first">
+        Flecken entfernen:<br />
+
+        Hartnäckige Flecken können Sie uns überlassen.
+        Experten die Reinigung und Restauration
+        <!-- Wenn Ihr Orientteppich befleckt ist und Sie nicht wissen, wie Sie hartnäckige oder schwierige Flecken wieder entfernen können,
+        sollten Sie uns als Experten die Reinigung und Restauration von Teppichen überlassen -->
+      </p>
+    </div>
+    <div class="second col-lg-4 col-sm-11">
+      <div class="image">
+        <img style="width: 100%; height: 100%" src="teppisch-images/Reparatur/knife-repair.jpeg" alt="" class="second">
+      </div>
+      <p class="second">
+        Reparatur:<br />
+
+        In unsere hauseigenen Teppich_Werkstatt werden alle Arten von Reparaturen und Restaurationen fachmännisch ausgeführt.
+      </p>
+    </div>
+    <div class="third col-lg-4 col-sm-11">
+      <div class="image">
+        <img style="width: 100%; height: 100%" src="teppisch-images/Wäscherei/wash-tide.jpeg" alt="" class="third">
+      </div>
+      <p class="third">
+        Wäscherei:<br />
+
+        Zur schonenden und professionellen Teppichreinigung gehört bei uns die Handwäsche_und noch eigenes mehr.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+
 <!-- starting carosel section -->
-<div id="demo" class="carousel slide" data-ride="carousel">
+<div id="demo" class="carousel slide myMainCarousel" data-ride="carousel">
 
   <!-- Indicators -->
   <ul class="carousel-indicators">
     <li data-target="#demo" data-slide-to="0" class="active"></li>
     <li data-target="#demo" data-slide-to="1"></li>
     <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
   </ul>
 
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="test-images/alps.jpg" alt="Los Angeles" width="1100" height="500">
+      <img class="imageOfSteps" src="test-images/alps.jpg" alt="Los Angeles" width="1100" height="500">
     </div>
     <div class="carousel-item">
-      <img src="test-images/brooklyn.jpg" alt="Chicago" width="1100" height="500">
+      <img class="imageOfSteps" src="test-images/brooklyn.jpg" alt="Chicago" width="1100" height="500">
     </div>
     <div class="carousel-item">
-      <img src="test-images/forest.jpg" alt="New York" width="1100" height="500">
+      <img class="imageOfSteps" src="test-images/forest.jpg" alt="New York" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img class="imageOfSteps" src="test-images/canyon.jpg" alt="New York" width="1100" height="500">
     </div>
   </div>
 
@@ -111,6 +200,14 @@
   </a>
 </div>
 
+<div style="height: 5vw"></div>
 
+<!-- adding video -->
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="teppisch-images/video-clip/teppich-video.mp4" allowfullscreen></iframe>
+</div>
+
+
+<script src="index.js" charset="utf-8"></script>
 </body>
 </html>
