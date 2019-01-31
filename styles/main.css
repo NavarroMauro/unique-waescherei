@@ -1,3 +1,7 @@
+body {
+  position: relative !important;
+}
+
 body div.waescherei {
   font-size: 2.5vw;
 }
@@ -6,6 +10,11 @@ body div.waescherei {
   body div.waescherei {
     font-size: 4.5vw;
   }
+}
+
+body div.main-6-level {
+  position: relative !important;
+  z-index: 1;
 }
 
 body div.main-6-level div.first-3-level div div.image {
@@ -23,6 +32,172 @@ body div.six-steps-title {
 }
 
 body div.myMainCarousel {
+  position: relative !important;
+  z-index: 1;
   display: none;
 }
-/*# sourceMappingURL=main.css.map */
+
+body div.video {
+  position: relative !important;
+  z-index: 1;
+}
+
+body div.lightboxContainer {
+  position: fixed !important;
+  z-index: 4;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  display: none;
+  background: lime;
+  /* The Modal (background) */
+  /* Modal Content */
+  /* The Close Button */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Number text (1/3 etc) */
+}
+
+body div.lightboxContainer div.lightbox {
+  margin: 0 auto;
+}
+
+body div.lightboxContainer h2.lightboxH2 {
+  position: relative;
+}
+
+body div.lightboxContainer h2.lightboxH2 span.fixed-close {
+  position: absolute;
+  top: 80%;
+  right: 5%;
+  color: red;
+}
+
+body div.lightboxContainer h2.lightboxH2 span.fixed-close:hover {
+  cursor: pointer;
+}
+
+body div.lightboxContainer .row > .column {
+  padding: 0 8px;
+}
+
+body div.lightboxContainer .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body div.lightboxContainer .column {
+  float: left;
+  width: 25%;
+}
+
+body div.lightboxContainer .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+body div.lightboxContainer .modal-content {
+  position: relative !important;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+body div.lightboxContainer .close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+body div.lightboxContainer .close:hover,
+body div.lightboxContainer .close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body div.lightboxContainer .mySlides {
+  display: none;
+}
+
+body div.lightboxContainer .cursor {
+  cursor: pointer;
+}
+
+body div.lightboxContainer .prev,
+body div.lightboxContainer .next {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: lime;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+body div.lightboxContainer .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+body div.lightboxContainer .prev:hover,
+body div.lightboxContainer .next:hover {
+  background-color: cyan;
+}
+
+body div.lightboxContainer .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+body div.lightboxContainer img {
+  margin-bottom: -4px;
+}
+
+body div.lightboxContainer .caption-container {
+  text-align: center;
+  background-color: white;
+  padding: 8px 16px;
+  color: white;
+}
+
+body div.lightboxContainer .demo {
+  opacity: 0.6;
+}
+
+body div.lightboxContainer .active,
+body div.lightboxContainer .demo:hover {
+  opacity: 1;
+}
+
+body div.lightboxContainer img.hover-shadow {
+  transition: 0.3s;
+}
+
+body div.lightboxContainer .hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

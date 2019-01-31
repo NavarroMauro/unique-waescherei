@@ -3,6 +3,9 @@ let sixSteps = document.querySelectorAll('div.image');
 let imageOfSteps = document.querySelectorAll('img.imageOfSteps');
 let sixStepsContainer = document.querySelector('div.main-6-level');
 let carouselContainer = document.querySelector('div.myMainCarousel');
+let mainLightBox = document.querySelector('div.lightboxContainer');
+let spanClose = document.querySelector('span.fixed-close');
+let spanCloseAll = document.querySelector('span.closeLightboxContainer');
 // console.log(sixStepsContainer);
 
 let mainArray = [
@@ -27,7 +30,10 @@ for (let i=0; i<sixSteps.length; i++) {
 
   sixSteps[i].addEventListener('click', function(ev) {
     let targetIdentifier = ev.currentTarget.className;
-    carouselContainer.style.display='block';
+    // carouselContainer.style.display='block';
+    mainLightBox.style.display= 'block';
+    sixStepsContainer.style.display='none';
+
 
     // console.log(targetIdentifier);
 
@@ -37,6 +43,53 @@ for (let i=0; i<sixSteps.length; i++) {
       imageOfSteps[j].src = filterImages[j].src;
     }
   })
+}
+
+// adding span as closing button
+spanClose.addEventListener('click', function() {
+  mainLightBox.style.display= 'none';
+})
+
+spanCloseAll.addEventListener('click', function() {
+  mainLightBox.style.display= 'none';
+})
+
+// starting lightbox ###############################################################
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  // captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
 
