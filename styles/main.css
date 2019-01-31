@@ -18,11 +18,21 @@ body div.main-6-level div.first-3-level div div.image {
   }
 }
 
-body div.six-steps-title {
-  padding: 2vw 0;
+body .vert .carousel-item-next.carousel-item-left,
+body .vert .carousel-item-prev.carousel-item-right {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
-body div.myMainCarousel {
-  display: none;
+body .vert .carousel-item-next,
+body .vert .active.carousel-item-right {
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100% 0);
+}
+
+body .vert .carousel-item-prev,
+body .vert .active.carousel-item-left {
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
 }
 /*# sourceMappingURL=main.css.map */
