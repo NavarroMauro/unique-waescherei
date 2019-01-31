@@ -30,12 +30,12 @@ body {
      }
   }
 
-
-
-  // starting six steps main title
-  div.six-steps-title {
-    padding: 2vw 0;
+  .vert .carousel-item-next.carousel-item-left,
+  .vert .carousel-item-prev.carousel-item-right {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
   }
+
 
   // starting carousel section
   div.myMainCarousel {
@@ -215,5 +215,19 @@ body {
     }
   }
   // #######################################################################################
+
+
+
+  .vert .carousel-item-next,
+  .vert .active.carousel-item-right {
+      -webkit-transform: translate3d(0, 100%, 0);
+              transform: translate3d(0, 100% 0);
+  }
+
+  .vert .carousel-item-prev,
+  .vert .active.carousel-item-left {
+  -webkit-transform: translate3d(0,-100%, 0);
+          transform: translate3d(0,-100%, 0);
+  }
 
 }
