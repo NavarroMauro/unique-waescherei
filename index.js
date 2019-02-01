@@ -2,7 +2,6 @@
 let sixSteps = document.querySelectorAll('div.image');
 let imageOfSteps = document.querySelectorAll('img.imageOfSteps');
 let sixStepsContainer = document.querySelector('div.main-6-level');
-let carouselContainer = document.querySelector('div.myMainCarousel');
 let mainLightBox = document.querySelector('div.lightboxContainer');
 let spanClose = document.querySelector('span.fixed-close');
 let spanCloseAll = document.querySelector('span.closeLightboxContainer');
@@ -24,13 +23,12 @@ let mainArray = [
   {identitiy: 'image wash', src: 'teppisch-images/Wäscherei/wash3.jpeg'},
   {identitiy: 'image wash', src: 'teppisch-images/Wäscherei/wash4.jpeg'}
 ];
-console.log(imageOfSteps[1].src);
+// console.log(imageOfSteps[1].src);
 
 for (let i=0; i<sixSteps.length; i++) {
 
   sixSteps[i].addEventListener('click', function(ev) {
     let targetIdentifier = ev.currentTarget.className;
-    // carouselContainer.style.display='block';
     mainLightBox.style.display= 'block';
     sixStepsContainer.style.display='none';
 

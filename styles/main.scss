@@ -1,6 +1,5 @@
 
 body {
-  position: relative !important;
 
 // WÄSCHEREI title
   div.waescherei {
@@ -13,8 +12,14 @@ body {
 
 
   div.main-6-level {
-    position: relative !important;
-    z-index: 1;
+
+    div.main-6-level-text {
+
+      h5 {
+        padding: 3vw 0;
+      }
+    }
+
 
 
     // first-3-steps
@@ -22,6 +27,20 @@ body {
 
        div div.image {
           height: 30vw;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          img {
+            height: 100%;
+            width: 100%;
+
+            &:hover {
+              filter: brightness(120%);
+              border: 2px solid cyan;
+            }
+          }
 
           @media screen and (max-width: 600px) {
             height: 55vw;
@@ -37,18 +56,9 @@ body {
   }
 
 
-  // starting carousel section
-  div.myMainCarousel {
-    position: relative !important;
-    z-index: 1;
-    display: none;
-  }
-
-
   // video part
   div.video {
-    position: relative !important;
-    z-index: 1;
+
   }
 
   // starting lightbox #################################################################
@@ -64,14 +74,25 @@ body {
     // own styles
     div.lightbox {
       margin: 0 auto;
+
+      div {
+
+        img.img-hover {
+
+          &:hover {
+            border: 2px solid yellow;
+            filter: brightness(120%);
+          }
+        }
+      }
     }
 
     h2.lightboxH2 {
-      position: relative;
+
 
       span.fixed-close {
         position: absolute;
-        top: 80%;
+        top: 5%;
         right: 5%;
         color: red;
 
@@ -108,7 +129,7 @@ body {
       width: 100%;
       height: 100%;
       overflow: auto;
-      background-color: black;
+      background-color: darken(brown, 10%);
     }
 
     /* Modal Content */
@@ -121,9 +142,14 @@ body {
       max-width: 1200px;
     }
 
+    // adding my style +++++++++++++++++++++++
+    div.background-style {
+      background-color: darken(brown, 10%);
+    }
+
     /* The Close Button */
     .close {
-      color: white;
+      color: blue;
       position: absolute;
       top: 10px;
       right: 25px;
