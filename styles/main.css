@@ -26,7 +26,8 @@ body div.main-6-level div.first-3-level div div.image img {
 }
 
 body div.main-6-level div.first-3-level div div.image img:hover {
-  filter: brightness(120%);
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
   border: 2px solid cyan;
 }
 
@@ -47,7 +48,8 @@ body div.lightboxContainer {
   z-index: 4;
   font-family: Verdana, sans-serif;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: none;
   background: lime;
   /* The Modal (background) */
@@ -65,7 +67,8 @@ body div.lightboxContainer div.lightbox {
 
 body div.lightboxContainer div.lightbox div img.img-hover:hover {
   border: 2px solid yellow;
-  filter: brightness(120%);
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
 }
 
 body div.lightboxContainer h2.lightboxH2 span.fixed-close {
@@ -155,9 +158,12 @@ body div.lightboxContainer .next {
   color: lime;
   font-weight: bold;
   font-size: 20px;
+  -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
   -webkit-user-select: none;
 }
 
@@ -200,11 +206,13 @@ body div.lightboxContainer .demo:hover {
 }
 
 body div.lightboxContainer img.hover-shadow {
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 body div.lightboxContainer .hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 body .vert .carousel-item-next,
@@ -218,3 +226,4 @@ body .vert .active.carousel-item-left {
   -webkit-transform: translate3d(0, -100%, 0);
   transform: translate3d(0, -100%, 0);
 }
+/*# sourceMappingURL=main.css.map */
