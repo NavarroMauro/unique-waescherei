@@ -1,10 +1,12 @@
 
 let sixSteps = document.querySelectorAll('div.image');
-let imageOfSteps = document.querySelectorAll('img.imageOfSteps');
+let imageOfSteps = document.querySelectorAll('img.img-hover');
 let sixStepsContainer = document.querySelector('div.main-6-level');
 let mainLightBox = document.querySelector('div.lightboxContainer');
 let spanClose = document.querySelector('span.fixed-close');
 let spanCloseAll = document.querySelector('span.closeLightboxContainer');
+let bigImages = document.querySelectorAll('img.bigImages');
+let smallImages = document.querySelectorAll('img.smallImage');
 // console.log(sixStepsContainer);
 
 let mainArray = [
@@ -18,10 +20,25 @@ let mainArray = [
   {identitiy: 'image reparatur', src: 'teppisch-images/Reparatur/reparatur3.jpeg'},
   {identitiy: 'image reparatur', src: 'teppisch-images/Reparatur/reparatur4.jpeg'},
 
+  {identitiy: 'image sauna', src: 'teppisch-images/teppich-sauna/sauna1.jpeg'},
+  {identitiy: 'image sauna', src: 'teppisch-images/teppich-sauna/sauna2.jpeg'},
+  {identitiy: 'image sauna', src: 'teppisch-images/teppich-sauna/sauna3.jpeg'},
+  {identitiy: 'image sauna', src: 'teppisch-images/teppich-sauna/sauna4.jpeg'},
+
+  {identitiy: 'image kontrolle', src: 'teppisch-images/ende-kontrolle/ende-kontrolle1.jpeg'},
+  {identitiy: 'image kontrolle', src: 'teppisch-images/ende-kontrolle/ende-kontrolle2.jpeg'},
+  {identitiy: 'image kontrolle', src: 'teppisch-images/ende-kontrolle/ende-kontrolle3.jpeg'},
+  {identitiy: 'image kontrolle', src: 'teppisch-images/ende-kontrolle/ende-kontrolle4.jpeg'},
+
   {identitiy: 'image wash', src: 'teppisch-images/Wäscherei/wash1.jpeg'},
   {identitiy: 'image wash', src: 'teppisch-images/Wäscherei/wash2.jpeg'},
   {identitiy: 'image wash', src: 'teppisch-images/Wäscherei/wash3.jpeg'},
-  {identitiy: 'image wash', src: 'teppisch-images/Wäscherei/wash4.jpeg'}
+  {identitiy: 'image wash', src: 'teppisch-images/Wäscherei/wash4.jpeg'},
+
+  {identitiy: 'image lieferung', src: 'teppisch-images/lieferung/lieferung1.jpeg'},
+  {identitiy: 'image lieferung', src: 'teppisch-images/lieferung/lieferung2.jpeg'},
+  {identitiy: 'image lieferung', src: 'teppisch-images/lieferung/lieferung3.jpeg'},
+  {identitiy: 'image lieferung', src: 'teppisch-images/lieferung/lieferung4.jpeg'}
 ];
 // console.log(imageOfSteps[1].src);
 
@@ -51,6 +68,23 @@ spanClose.addEventListener('click', function() {
 spanCloseAll.addEventListener('click', function() {
   mainLightBox.style.display= 'none';
 })
+
+// bigImage Click
+for (let k=0; k<imageOfSteps.length; k++) {
+  imageOfSteps[k].addEventListener('click', function(event) {
+
+    for (let t=0; t<imageOfSteps.length; t++) {
+      smallImages[t].src=imageOfSteps[t].src;
+    }
+
+    for (let z=0; z<imageOfSteps.length; z++) {
+      bigImages[z].src=imageOfSteps[z].src;
+    }
+    // bigImage.src=`${event.currentTarget.src}`;
+    smallImages[k].src=`${event.currentTarget.src}`;
+
+  })
+}
 
 // starting lightbox ###############################################################
 function openModal() {
@@ -89,23 +123,3 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   // captionText.innerHTML = dots[slideIndex-1].alt;
 }
-
-
-
-// let fleckenArray = [
-//   {src: 'teppisch-images/Flecken-entfernen/flecken-1.jpeg'},
-//   {src: 'teppisch-images/Flecken-entfernen/flecken-2.jpeg'},
-//   {src: 'teppisch-images/Flecken-entfernen/flecken-3.jpeg'},
-//   {src: 'teppisch-images/Flecken-entfernen/flecken-4.jpeg'}
-// ];
-// console.log(imageOfSteps[1].src);
-//
-// for (let i=0; i<sixSteps.length; i++) {
-//
-//   sixSteps[i].addEventListener('click', function() {
-//
-//       for (let j=0; j<fleckenArray.length; j++) {
-//         imageOfSteps[j].src = fleckenArray[j].src;
-//       }
-//   })
-// }

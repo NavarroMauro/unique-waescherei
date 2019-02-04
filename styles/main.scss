@@ -85,6 +85,16 @@ body {
           }
         }
       }
+
+      @media screen and (max-width: 750px) {
+      height: 700px;
+      padding-top: 12vw;
+      }
+
+      @media screen and (max-width: 450px) {
+        height: 700px;
+      padding-top: 5vw;
+      }
     }
 
     h2.lightboxH2 {
@@ -116,6 +126,14 @@ body {
     .column {
       float: left;
       width: 25%;
+
+      @media screen and (max-width: 750px) {
+      height: 300px;
+      }
+
+      @media screen and (max-width: 450px) {
+        height: 300px;
+      }
     }
 
     /* The Modal (background) */
@@ -140,11 +158,33 @@ body {
       padding: 0;
       width: 90%;
       max-width: 1200px;
+
+      border: none !important;
+
+      @media screen and (max-width: 650px) {
+        height: 100%;
+        background: #7C2020;
+      }
+
     }
 
     // adding my style +++++++++++++++++++++++
     div.background-style {
       background-color: darken(brown, 10%);
+
+      @media screen and (max-width: 750px) {
+      margin: 5vw 0;
+      }
+
+      @media screen and (max-width: 450px) {
+        position: relative !important;
+        top: 12vw;
+      }
+
+      @media screen and (max-width: 380px) {
+        position: relative !important;
+        top: 20vw;
+      }
     }
 
     /* The Close Button */
@@ -155,6 +195,8 @@ body {
       right: 25px;
       font-size: 35px;
       font-weight: bold;
+
+      z-index: 4;
     }
 
     .close:hover,
@@ -166,6 +208,30 @@ body {
 
     .mySlides {
       display: none;
+
+      img {
+        @media screen and (max-width: 750px) {
+        height: 100%;
+        width: 100%;
+        }
+      }
+
+
+      @media screen and (max-width: 750px) {
+      height: 60vw !important;
+      }
+
+      @media screen and (max-width: 450px) {
+        height: 60vw !important;
+        position: relative !important;
+        top: 15vw;
+      }
+
+      @media screen and (max-width: 380px) {
+        height: 60vw !important;
+        position: relative !important;
+        top: 25vw;
+      }
     }
 
     .cursor {
@@ -188,6 +254,14 @@ body {
       border-radius: 0 3px 3px 0;
       user-select: none;
       -webkit-user-select: none;
+
+      @media screen and (max-width: 450px) {
+        top: 32%;
+      }
+
+      @media screen and (max-width: 380px) {
+        top: 32%;
+      }
     }
 
     /* Position the "next button" to the right */
@@ -238,6 +312,16 @@ body {
 
     .hover-shadow:hover {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    @media screen and (max-width: 750px) {
+    height: 700px;
+    padding-top: 12vw;
+    }
+
+    @media screen and (max-width: 450px) {
+      height: 700px;
+    padding-top: 40vw;
     }
   }
   // #######################################################################################

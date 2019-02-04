@@ -71,6 +71,20 @@ body div.lightboxContainer div.lightbox div img.img-hover:hover {
           filter: brightness(120%);
 }
 
+@media screen and (max-width: 750px) {
+  body div.lightboxContainer div.lightbox {
+    height: 700px;
+    padding-top: 12vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body div.lightboxContainer div.lightbox {
+    height: 700px;
+    padding-top: 5vw;
+  }
+}
+
 body div.lightboxContainer h2.lightboxH2 span.fixed-close {
   position: absolute;
   top: 5%;
@@ -97,6 +111,18 @@ body div.lightboxContainer .column {
   width: 25%;
 }
 
+@media screen and (max-width: 750px) {
+  body div.lightboxContainer .column {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body div.lightboxContainer .column {
+    height: 300px;
+  }
+}
+
 body div.lightboxContainer .modal {
   display: none;
   position: fixed;
@@ -117,10 +143,38 @@ body div.lightboxContainer .modal-content {
   padding: 0;
   width: 90%;
   max-width: 1200px;
+  border: none !important;
+}
+
+@media screen and (max-width: 650px) {
+  body div.lightboxContainer .modal-content {
+    height: 100%;
+    background: #7C2020;
+  }
 }
 
 body div.lightboxContainer div.background-style {
   background-color: #7c2020;
+}
+
+@media screen and (max-width: 750px) {
+  body div.lightboxContainer div.background-style {
+    margin: 5vw 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body div.lightboxContainer div.background-style {
+    position: relative !important;
+    top: 12vw;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  body div.lightboxContainer div.background-style {
+    position: relative !important;
+    top: 20vw;
+  }
 }
 
 body div.lightboxContainer .close {
@@ -130,6 +184,7 @@ body div.lightboxContainer .close {
   right: 25px;
   font-size: 35px;
   font-weight: bold;
+  z-index: 4;
 }
 
 body div.lightboxContainer .close:hover,
@@ -141,6 +196,35 @@ body div.lightboxContainer .close:focus {
 
 body div.lightboxContainer .mySlides {
   display: none;
+}
+
+@media screen and (max-width: 750px) {
+  body div.lightboxContainer .mySlides img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body div.lightboxContainer .mySlides {
+    height: 60vw !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body div.lightboxContainer .mySlides {
+    height: 60vw !important;
+    position: relative !important;
+    top: 15vw;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  body div.lightboxContainer .mySlides {
+    height: 60vw !important;
+    position: relative !important;
+    top: 25vw;
+  }
 }
 
 body div.lightboxContainer .cursor {
@@ -165,6 +249,20 @@ body div.lightboxContainer .next {
    -ms-user-select: none;
        user-select: none;
   -webkit-user-select: none;
+}
+
+@media screen and (max-width: 450px) {
+  body div.lightboxContainer .prev,
+  body div.lightboxContainer .next {
+    top: 32%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  body div.lightboxContainer .prev,
+  body div.lightboxContainer .next {
+    top: 32%;
+  }
 }
 
 body div.lightboxContainer .next {
@@ -213,6 +311,20 @@ body div.lightboxContainer img.hover-shadow {
 body div.lightboxContainer .hover-shadow:hover {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 750px) {
+  body div.lightboxContainer {
+    height: 700px;
+    padding-top: 12vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body div.lightboxContainer {
+    height: 700px;
+    padding-top: 40vw;
+  }
 }
 
 body .vert .carousel-item-next,
