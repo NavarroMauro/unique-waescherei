@@ -129,7 +129,7 @@
 
     <!-- starting fist 3 level section -->
     <div
-      class="main-6-level row d-flex justify-content-center flex-direction-coloumn border border-danger"
+      class="main-6-level row d-flex justify-content-center flex-direction-coloumn"
     >
       <div
         class="main-6-level-text col-lg-11 col-sm-10 text-center six-steps-title"
@@ -141,10 +141,10 @@
       <br />
 
       <div
-        class="first-3-level col-lg-11 d-flex justify-content-around row border border-info"
+        class="first-3-level col-lg-11 d-flex justify-content-around row"
       >
         <div class="first col-lg-4 col-sm-11">
-          <div class="image flecken">
+          <div class="image flecken" identifier="flecken">
             <img
               src="teppisch-images/Flecken-entfernen/cup.jpeg"
               alt=""
@@ -194,10 +194,10 @@
 
       <!-- second three steps -->
       <div
-        class="first-3-level col-lg-11 d-flex justify-content-around row border border-info"
+        class="first-3-level col-lg-11 d-flex justify-content-around row"
       >
         <div class="first col-lg-4 col-sm-11">
-          <div class="image">
+          <div class="image sauna" identifier="sauna">
             <img
               src="teppisch-images/Wäscherei/wash-machine.jpeg"
               alt=""
@@ -205,16 +205,15 @@
             />
           </div>
           <p class="first">
-            Flecken entfernen:<br />
+            Teppichsauna:<br />
 
-            Hartnäckige Flecken können Sie uns überlassen. Experten die
-            Reinigung und Restauration
+          Der Teppich verliert bei langsamer Trocknung seine restliche Feuchtigkeit.<br />
             <!-- Wenn Ihr Orientteppich befleckt ist und Sie nicht wissen, wie Sie hartnäckige oder schwierige Flecken wieder entfernen können,
         sollten Sie uns als Experten die Reinigung und Restauration von Teppichen überlassen -->
           </p>
         </div>
         <div class="second col-lg-4 col-sm-11">
-          <div class="image">
+          <div class="image kontrolle" identifier="kontrolle">
             <img
               src="teppisch-images/Reparatur/knife-repair.jpeg"
               alt=""
@@ -222,14 +221,13 @@
             />
           </div>
           <p class="second">
-            Reparatur:<br />
+            Endkontrolle:<br />
 
-            In unsere hauseigenen Teppich_Werkstatt werden alle Arten von
-            Reparaturen und Restaurationen fachmännisch ausgeführt.
+             Unsere Experten überzeugen sich von der hohen Qualität der Reinigung.<br />
           </p>
         </div>
         <div class="third col-lg-4 col-sm-11">
-          <div class="image">
+          <div class="image lieferung" identifier="lieferung">
             <img
               src="teppisch-images/Wäscherei/wash-tide.jpeg"
               alt=""
@@ -237,10 +235,9 @@
             />
           </div>
           <p class="third">
-            Wäscherei:<br />
+            Auslieferung:<br />
 
-            Zur schonenden und professionellen Teppichreinigung gehört bei uns
-            die Handwäsche_und noch eigenes mehr.
+            Unsere kostenloser Hol_ und Bringservice liefert Ihnen gereinigten Teppich zu Ihnen nach Hause.<br />
           </p>
         </div>
       </div>
@@ -282,22 +279,22 @@
 
       <div class="mySlides" style="height:40vw">
         <!-- <div class="numbertext">1 / 4</div> -->
-        <img src="teppisch-images/Flecken-entfernen/flecken-1.jpeg" style="width:100%; height: 100%">
+        <img class="bigImages" src="teppisch-images/Flecken-entfernen/flecken-1.jpeg" style="width:100%; height: 100%">
       </div>
 
       <div class="mySlides" style="height:40vw">
         <!-- <div class="numbertext">2 / 4</div> -->
-        <img src="teppisch-images/Reparatur/reparatur1.jpeg" style="width:100%; height: 100%">
+        <img class="bigImages" src="teppisch-images/Reparatur/reparatur1.jpeg" style="width:100%; height: 100%">
       </div>
 
       <div class="mySlides" style="height:40vw">
         <!-- <div class="numbertext">3 / 4</div> -->
-        <img src="teppisch-images/Wäscherei/wash1.jpeg" style="width:100%; height: 100%">
+        <img class="bigImages" src="teppisch-images/Wäscherei/wash1.jpeg" style="width:100%; height: 100%">
       </div>
 
       <div class="mySlides" style="height:40vw">
         <!-- <div class="numbertext">4 / 4</div> -->
-        <img src="teppisch-images/Wäscherei/wash4.jpeg" style="width:100%; height: 100%">
+        <img class="bigImages" src="teppisch-images/Wäscherei/wash4.jpeg" style="width:100%; height: 100%">
       </div>
 
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -310,16 +307,16 @@
 
       <div class="d-flex justify-content-around background-style">
         <div class="column" style="height: 16vw; width: 20vw">
-          <img class="demo cursor" src="teppisch-images/Flecken-entfernen/flecken-1.jpeg" style="width:100%; height: 100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+          <img class="demo smallImage cursor" src="teppisch-images/Flecken-entfernen/flecken-1.jpeg" style="width:100%; height: 100%" onclick="currentSlide(1)" alt="Nature and sunrise">
         </div>
         <div class="column" style="height: 16vw; width: 20vw">
-          <img class="demo cursor" src="teppisch-images/Reparatur/reparatur1.jpeg" style="width:100%; height: 100%" onclick="currentSlide(2)" alt="Snow">
+          <img class="demo smallImage cursor" src="teppisch-images/Reparatur/reparatur1.jpeg" style="width:100%; height: 100%" onclick="currentSlide(2)" alt="Snow">
         </div>
         <div class="column" style="height: 16vw; width: 20vw">
-          <img class="demo cursor" src="teppisch-images/Wäscherei/wash1.jpeg" style="width:100%; height: 100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+          <img class="demo smallImage cursor" src="teppisch-images/Wäscherei/wash1.jpeg" style="width:100%; height: 100%" onclick="currentSlide(3)" alt="Mountains and fjords">
         </div>
         <div class="column" style="height: 16vw; width: 20vw">
-          <img class="demo cursor" src="teppisch-images/Wäscherei/wash4.jpeg" style="width:100%; height: 100%" onclick="currentSlide(4)" alt="Northern Lights">
+          <img class="demo smallImage cursor" src="teppisch-images/Wäscherei/wash4.jpeg" style="width:100%; height: 100%" onclick="currentSlide(4)" alt="Northern Lights">
         </div>
       </div>
 
