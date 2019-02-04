@@ -10,6 +10,11 @@ body {
     }
   }
 
+  button {
+    &:hover {
+      background-color: #3D1000;
+    }
+  }
 
   div.main-6-level {
 
@@ -57,9 +62,9 @@ body {
 
 
   // video part
-  div.video {
+  // div.video {
 
-  }
+  // }
 
   // starting lightbox #################################################################
   div.lightboxContainer {
