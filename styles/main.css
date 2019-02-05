@@ -30,8 +30,7 @@ body div.main-6-level div.first-3-level div div.image img {
 }
 
 body div.main-6-level div.first-3-level div div.image img:hover {
-  -webkit-filter: brightness(120%);
-          filter: brightness(120%);
+  filter: brightness(120%);
   border: 2px solid cyan;
 }
 
@@ -52,10 +51,9 @@ body div.lightboxContainer {
   z-index: 4;
   font-family: Verdana, sans-serif;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: none;
-  background: lime;
+  background: white;
   /* The Modal (background) */
   /* Modal Content */
   /* The Close Button */
@@ -71,8 +69,7 @@ body div.lightboxContainer div.lightbox {
 
 body div.lightboxContainer div.lightbox div img.img-hover:hover {
   border: 2px solid yellow;
-  -webkit-filter: brightness(120%);
-          filter: brightness(120%);
+  filter: brightness(120%);
 }
 
 @media screen and (max-width: 750px) {
@@ -137,7 +134,7 @@ body div.lightboxContainer .modal {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: #7c2020;
+  background-color: black;
 }
 
 body div.lightboxContainer .modal-content {
@@ -243,15 +240,12 @@ body div.lightboxContainer .next {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: lime;
+  color: black;
   font-weight: bold;
-  font-size: 20px;
-  -webkit-transition: 0.6s ease;
+  font-size: 40px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
+  user-select: none;
   -webkit-user-select: none;
 }
 
@@ -276,7 +270,7 @@ body div.lightboxContainer .next {
 
 body div.lightboxContainer .prev:hover,
 body div.lightboxContainer .next:hover {
-  background-color: cyan;
+  background-color: #3D1000;
 }
 
 body div.lightboxContainer .numbertext {
@@ -308,13 +302,11 @@ body div.lightboxContainer .demo:hover {
 }
 
 body div.lightboxContainer img.hover-shadow {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 body div.lightboxContainer .hover-shadow:hover {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media screen and (max-width: 750px) {
@@ -342,4 +334,3 @@ body .vert .active.carousel-item-left {
   -webkit-transform: translate3d(0, -100%, 0);
   transform: translate3d(0, -100%, 0);
 }
-/*# sourceMappingURL=main.css.map */

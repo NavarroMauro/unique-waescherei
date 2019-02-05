@@ -10,35 +10,35 @@ let smallImages = document.querySelectorAll('img.smallImage');
 // console.log(sixStepsContainer);
 
 let mainArray = [
-  {identitiy: 'image flecken', src: 'teppisch-images/Flecken-entfernen/flecken-1.jpeg'},
-  {identitiy: 'image flecken', src: 'teppisch-images/Flecken-entfernen/flecken-2.jpeg'},
-  {identitiy: 'image flecken', src: 'teppisch-images/Flecken-entfernen/flecken-3.jpeg'},
-  {identitiy: 'image flecken', src: 'teppisch-images/Flecken-entfernen/flecken-4.jpeg'},
+  {identitiy: 'image flecken', src: 'images/teppisch-images/Flecken-entfernen/flecken-1.jpeg'},
+  {identitiy: 'image flecken', src: 'images/teppisch-images/Flecken-entfernen/flecken-2.jpeg'},
+  {identitiy: 'image flecken', src: 'images/teppisch-images/Flecken-entfernen/flecken-3.jpeg'},
+  {identitiy: 'image flecken', src: 'images/teppisch-images/Flecken-entfernen/flecken-4.jpeg'},
 
-  {identitiy: 'image reparatur', src: 'teppisch-images/Reparatur/reparatur1.jpeg'},
-  {identitiy: 'image reparatur', src: 'teppisch-images/Reparatur/reparatur2.jpeg'},
-  {identitiy: 'image reparatur', src: 'teppisch-images/Reparatur/reparatur3.jpeg'},
-  {identitiy: 'image reparatur', src: 'teppisch-images/Reparatur/reparatur4.jpeg'},
+  {identitiy: 'image reparatur', src: 'images/teppisch-images/Reparatur/reparatur1.jpeg'},
+  {identitiy: 'image reparatur', src: 'images/teppisch-images/Reparatur/reparatur2.jpeg'},
+  {identitiy: 'image reparatur', src: 'images/teppisch-images/Reparatur/reparatur3.jpeg'},
+  {identitiy: 'image reparatur', src: 'images/teppisch-images/Reparatur/reparatur4.jpeg'},
 
-  {identitiy: 'image sauna', src: 'teppisch-images/teppich-sauna/sauna1.jpeg'},
-  {identitiy: 'image sauna', src: 'teppisch-images/teppich-sauna/sauna2.jpeg'},
-  {identitiy: 'image sauna', src: 'teppisch-images/teppich-sauna/sauna3.jpeg'},
-  {identitiy: 'image sauna', src: 'teppisch-images/teppich-sauna/sauna4.jpeg'},
+  {identitiy: 'image sauna', src: 'images/teppisch-images/teppich-sauna/sauna1.jpeg'},
+  {identitiy: 'image sauna', src: 'images/teppisch-images/teppich-sauna/sauna2.jpeg'},
+  {identitiy: 'image sauna', src: 'images/teppisch-images/teppich-sauna/sauna3.jpeg'},
+  {identitiy: 'image sauna', src: 'images/teppisch-images/teppich-sauna/sauna4.jpeg'},
 
-  {identitiy: 'image kontrolle', src: 'teppisch-images/ende-kontrolle/ende-kontrolle1.jpeg'},
-  {identitiy: 'image kontrolle', src: 'teppisch-images/ende-kontrolle/ende-kontrolle2.jpeg'},
-  {identitiy: 'image kontrolle', src: 'teppisch-images/ende-kontrolle/ende-kontrolle3.jpeg'},
-  {identitiy: 'image kontrolle', src: 'teppisch-images/ende-kontrolle/ende-kontrolle4.jpeg'},
+  {identitiy: 'image kontrolle', src: 'images/teppisch-images/ende-kontrolle/ende-kontrolle1.jpeg'},
+  {identitiy: 'image kontrolle', src: 'images/teppisch-images/ende-kontrolle/ende-kontrolle2.jpeg'},
+  {identitiy: 'image kontrolle', src: 'images/teppisch-images/ende-kontrolle/ende-kontrolle3.jpeg'},
+  {identitiy: 'image kontrolle', src: 'images/teppisch-images/ende-kontrolle/ende-kontrolle4.jpeg'},
 
-  {identitiy: 'image wash', src: 'teppisch-images/Wäscherei/wash1.jpeg'},
-  {identitiy: 'image wash', src: 'teppisch-images/Wäscherei/wash2.jpeg'},
-  {identitiy: 'image wash', src: 'teppisch-images/Wäscherei/wash3.jpeg'},
-  {identitiy: 'image wash', src: 'teppisch-images/Wäscherei/wash4.jpeg'},
+  {identitiy: 'image wash', src: 'images/teppisch-images/Wäscherei/wash1.jpeg'},
+  {identitiy: 'image wash', src: 'images/teppisch-images/Wäscherei/wash2.jpeg'},
+  {identitiy: 'image wash', src: 'images/teppisch-images/Wäscherei/wash3.jpeg'},
+  {identitiy: 'image wash', src: 'images/teppisch-images/Wäscherei/wash4.jpeg'},
 
-  {identitiy: 'image lieferung', src: 'teppisch-images/lieferung/lieferung1.jpeg'},
-  {identitiy: 'image lieferung', src: 'teppisch-images/lieferung/lieferung2.jpeg'},
-  {identitiy: 'image lieferung', src: 'teppisch-images/lieferung/lieferung3.jpeg'},
-  {identitiy: 'image lieferung', src: 'teppisch-images/lieferung/lieferung4.jpeg'}
+  {identitiy: 'image lieferung', src: 'images/teppisch-images/lieferung/lieferung1.jpeg'},
+  {identitiy: 'image lieferung', src: 'images/teppisch-images/lieferung/lieferung2.jpeg'},
+  {identitiy: 'image lieferung', src: 'images/teppisch-images/lieferung/lieferung3.jpeg'},
+  {identitiy: 'image lieferung', src: 'images/teppisch-images/lieferung/lieferung4.jpeg'}
 ];
 // console.log(imageOfSteps[1].src);
 
