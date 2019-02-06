@@ -120,32 +120,42 @@ body {
         &:hover {
           cursor: pointer;
         }
+
+        @media screen and (max-width: 450px) {
+             top: 5vw;
+             right: 9vw !important;
+           }
+
+        @media screen and (max-width: 380px) {
+             top: 5vw;
+             right: 12vw !important;
+           }
       }
     }
 
 
-    .row > .column {
-    padding: 0 8px;
-    }
-
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    .column {
-      float: left;
-      width: 25%;
-
-      @media screen and (max-width: 750px) {
-      height: 300px;
-      }
-
-      @media screen and (max-width: 450px) {
-        height: 300px;
-      }
-    }
+    // .row > .column {
+    // padding: 0 8px;
+    // }
+    //
+    // .row:after {
+    //   content: "";
+    //   display: table;
+    //   clear: both;
+    // }
+    //
+    // .column {
+    //   float: left;
+    //   width: 25%;
+    //
+    //   @media screen and (max-width: 750px) {
+    //   height: 300px;
+    //   }
+    //
+    //   @media screen and (max-width: 450px) {
+    //     height: 300px;
+    //   }
+    // }
 
     /* The Modal (background) */
     .modal {
@@ -164,7 +174,8 @@ body {
     /* Modal Content */
     .modal-content {
       position: relative !important;
-      background-color: #fefefe;
+      // background-color: #fefefe;
+      background-color: black;
       margin: auto;
       padding: 0;
       width: 90%;
@@ -180,23 +191,23 @@ body {
     }
 
     // adding my style +++++++++++++++++++++++
-    div.background-style {
-      background-color: darken(brown, 10%);
-
-      @media screen and (max-width: 750px) {
-      margin: 5vw 0;
-      }
-
-      @media screen and (max-width: 450px) {
-        position: relative !important;
-        top: 12vw;
-      }
-
-      @media screen and (max-width: 380px) {
-        position: relative !important;
-        top: 20vw;
-      }
-    }
+    // div.background-style {
+    //   background-color: darken(brown, 10%);
+    //
+    //   @media screen and (max-width: 750px) {
+    //   margin: 5vw 0;
+    //   }
+    //
+    //   @media screen and (max-width: 450px) {
+    //     position: relative !important;
+    //     top: 12vw;
+    //   }
+    //
+    //   @media screen and (max-width: 380px) {
+    //     position: relative !important;
+    //     top: 20vw;
+    //   }
+    // }
 
     /* The Close Button */
     .close {
@@ -208,6 +219,16 @@ body {
       font-weight: bold;
 
       z-index: 4;
+
+      @media screen and (max-width: 450px) {
+           top: 5vw;
+           right: 9vw !important;
+         }
+
+      @media screen and (max-width: 380px) {
+           top: 5vw;
+           right: 12vw !important;
+         }
     }
 
     .close:hover,
