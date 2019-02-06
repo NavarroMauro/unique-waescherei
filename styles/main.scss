@@ -48,7 +48,7 @@ body {
 
             &:hover {
               filter: brightness(120%);
-              border: 2px solid cyan;
+              border: 2px solid yellow;
             }
           }
 
@@ -286,6 +286,7 @@ body {
     .next:hover {
       // background-color: rgba(0, 0, 0, 0.8);
       background-color: #3D1000;
+      color: white;
     }
 
     /* Number text (1/3 etc) */

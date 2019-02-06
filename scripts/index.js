@@ -35,10 +35,10 @@ let mainArray = [
   {identitiy: 'image wash', src: 'images/teppisch-images/Wäscherei/wash3.jpeg'},
   {identitiy: 'image wash', src: 'images/teppisch-images/Wäscherei/wash4.jpeg'},
 
-  {identitiy: 'image lieferung', src: 'images/teppisch-images/lieferung/lieferung1.jpeg'},
-  {identitiy: 'image lieferung', src: 'images/teppisch-images/lieferung/lieferung2.jpeg'},
-  {identitiy: 'image lieferung', src: 'images/teppisch-images/lieferung/lieferung3.jpeg'},
-  {identitiy: 'image lieferung', src: 'images/teppisch-images/lieferung/lieferung4.jpeg'}
+  {identitiy: 'image lieferung', src: 'images/teppisch-images/lieferung/lieferung1.jpg'},
+  {identitiy: 'image lieferung', src: 'images/teppisch-images/lieferung/lieferung2.jpg'},
+  {identitiy: 'image lieferung', src: 'images/teppisch-images/lieferung/lieferung3.jpg'},
+  {identitiy: 'image lieferung', src: 'images/teppisch-images/lieferung/lieferung4.jpg'}
 ];
 // console.log(imageOfSteps[1].src);
 

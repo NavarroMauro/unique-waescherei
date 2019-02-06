@@ -1,6 +1,5 @@
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -37,7 +36,7 @@ body div.main-6-level div.first-3-level div div.image img {
 
 body div.main-6-level div.first-3-level div div.image img:hover {
   filter: brightness(120%);
-  border: 2px solid cyan;
+  border: 2px solid yellow;
 }
 
 @media screen and (max-width: 600px) {
@@ -277,6 +276,7 @@ body div.lightboxContainer .next {
 body div.lightboxContainer .prev:hover,
 body div.lightboxContainer .next:hover {
   background-color: #3D1000;
+  color: white;
 }
 
 body div.lightboxContainer .numbertext {
