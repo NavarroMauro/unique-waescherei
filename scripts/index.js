@@ -121,3 +121,15 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   // dots[slideIndex-1].className += " active";
 }
+
+// Finding Unintended Body Overflow 
+// const docWidth = document.documentElement.offsetWidth;
+
+// [].forEach.call(
+//   document.querySelectorAll('*'),
+//   function(el) {
+//     if (el.offsetWidth > docWidth) {
+//       console.log(el);
+//     }
+//   }
+// );
