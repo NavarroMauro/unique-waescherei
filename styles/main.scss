@@ -255,13 +255,13 @@ body {
       @media screen and (max-width: 450px) {
         height: 60vw !important;
         position: relative !important;
-        top: 15vw;
+        top: 18vw;
       }
 
       @media screen and (max-width: 380px) {
         height: 60vw !important;
         position: relative !important;
-        top: 25vw;
+        top: 28vw;
       }
     }
 
@@ -285,13 +285,10 @@ body {
       border-radius: 0 3px 3px 0;
       user-select: none;
       -webkit-user-select: none;
+      background-color: rgba(255,255,255,.4);
 
       @media screen and (max-width: 450px) {
-        top: 32%;
-      }
-
-      @media screen and (max-width: 380px) {
-        top: 32%;
+        padding: 5px 8px !important;
       }
     }
 

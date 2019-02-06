@@ -1,6 +1,5 @@
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -36,8 +35,7 @@ body div.main-6-level div.first-3-level div div.image img {
 }
 
 body div.main-6-level div.first-3-level div div.image img:hover {
-  -webkit-filter: brightness(120%);
-          filter: brightness(120%);
+  filter: brightness(120%);
   border: 2px solid yellow;
 }
 
@@ -58,8 +56,7 @@ body div.lightboxContainer {
   z-index: 4;
   font-family: Verdana, sans-serif;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: none;
   background: white;
   /* The Modal (background) */
@@ -77,8 +74,7 @@ body div.lightboxContainer div.lightbox {
 
 body div.lightboxContainer div.lightbox div img.img-hover:hover {
   border: 2px solid yellow;
-  -webkit-filter: brightness(120%);
-          filter: brightness(120%);
+  filter: brightness(120%);
 }
 
 @media screen and (max-width: 750px) {
@@ -202,7 +198,7 @@ body div.lightboxContainer .mySlides {
   body div.lightboxContainer .mySlides {
     height: 60vw !important;
     position: relative !important;
-    top: 15vw;
+    top: 18vw;
   }
 }
 
@@ -210,7 +206,7 @@ body div.lightboxContainer .mySlides {
   body div.lightboxContainer .mySlides {
     height: 60vw !important;
     position: relative !important;
-    top: 25vw;
+    top: 28vw;
   }
 }
 
@@ -229,26 +225,17 @@ body div.lightboxContainer .next {
   color: black;
   font-weight: bold;
   font-size: 40px;
-  -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
+  user-select: none;
   -webkit-user-select: none;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 @media screen and (max-width: 450px) {
   body div.lightboxContainer .prev,
   body div.lightboxContainer .next {
-    top: 32%;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  body div.lightboxContainer .prev,
-  body div.lightboxContainer .next {
-    top: 32%;
+    padding: 5px 8px !important;
   }
 }
 
@@ -292,13 +279,11 @@ body div.lightboxContainer .demo:hover {
 }
 
 body div.lightboxContainer img.hover-shadow {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 body div.lightboxContainer .hover-shadow:hover {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media screen and (max-width: 750px) {
@@ -332,4 +317,3 @@ span.title-img {
   font-weight: 900;
   font-size: 1.2rem;
 }
-/*# sourceMappingURL=main.css.map */
