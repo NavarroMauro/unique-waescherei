@@ -102,30 +102,17 @@ body div.lightboxContainer h2.lightboxH2 span.fixed-close:hover {
   cursor: pointer;
 }
 
-body div.lightboxContainer .row > .column {
-  padding: 0 8px;
-}
-
-body div.lightboxContainer .row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-body div.lightboxContainer .column {
-  float: left;
-  width: 25%;
-}
-
-@media screen and (max-width: 750px) {
-  body div.lightboxContainer .column {
-    height: 300px;
+@media screen and (max-width: 450px) {
+  body div.lightboxContainer h2.lightboxH2 span.fixed-close {
+    top: 5vw;
+    right: 9vw !important;
   }
 }
 
-@media screen and (max-width: 450px) {
-  body div.lightboxContainer .column {
-    height: 300px;
+@media screen and (max-width: 380px) {
+  body div.lightboxContainer h2.lightboxH2 span.fixed-close {
+    top: 5vw;
+    right: 12vw !important;
   }
 }
 
@@ -144,7 +131,7 @@ body div.lightboxContainer .modal {
 
 body div.lightboxContainer .modal-content {
   position: relative !important;
-  background-color: #fefefe;
+  background-color: black;
   margin: auto;
   padding: 0;
   width: 90%;
@@ -159,30 +146,6 @@ body div.lightboxContainer .modal-content {
   }
 }
 
-body div.lightboxContainer div.background-style {
-  background-color: #7c2020;
-}
-
-@media screen and (max-width: 750px) {
-  body div.lightboxContainer div.background-style {
-    margin: 5vw 0;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  body div.lightboxContainer div.background-style {
-    position: relative !important;
-    top: 12vw;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  body div.lightboxContainer div.background-style {
-    position: relative !important;
-    top: 20vw;
-  }
-}
-
 body div.lightboxContainer .close {
   color: blue;
   position: absolute;
@@ -191,6 +154,20 @@ body div.lightboxContainer .close {
   font-size: 35px;
   font-weight: bold;
   z-index: 4;
+}
+
+@media screen and (max-width: 450px) {
+  body div.lightboxContainer .close {
+    top: 5vw;
+    right: 9vw !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  body div.lightboxContainer .close {
+    top: 5vw;
+    right: 12vw !important;
+  }
 }
 
 body div.lightboxContainer .close:hover,

@@ -6,7 +6,7 @@ let mainLightBox = document.querySelector('div.lightboxContainer');
 let spanClose = document.querySelector('span.fixed-close');
 let spanCloseAll = document.querySelector('span.closeLightboxContainer');
 let bigImages = document.querySelectorAll('img.bigImages');
-let smallImages = document.querySelectorAll('img.smallImage');
+// let smallImages = document.querySelectorAll('img.smallImage');
 // console.log(sixStepsContainer);
 
 let mainArray = [
@@ -74,14 +74,13 @@ for (let k=0; k<imageOfSteps.length; k++) {
   imageOfSteps[k].addEventListener('click', function(event) {
 
     for (let t=0; t<imageOfSteps.length; t++) {
-      smallImages[t].src=imageOfSteps[t].src;
+      // smallImages[t].src=imageOfSteps[t].src;
     }
 
     for (let z=0; z<imageOfSteps.length; z++) {
       bigImages[z].src=imageOfSteps[z].src;
     }
-    // bigImage.src=`${event.currentTarget.src}`;
-    smallImages[k].src=`${event.currentTarget.src}`;
+    // smallImages[k].src=`${event.currentTarget.src}`;
 
   })
 }
@@ -120,6 +119,5 @@ function showSlides(n) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  // captionText.innerHTML = dots[slideIndex-1].alt;
+  // dots[slideIndex-1].className += " active";
 }
