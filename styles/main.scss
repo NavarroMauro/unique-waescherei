@@ -66,6 +66,113 @@ body {
   }
 
 
+// starting picturs for carousel
+  div.carouselPicturesContainer {
+    margin: 3vw 0;
+
+    div.carouselPictures {
+      width: 97%;
+      margin: 0 auto;;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      border: 2px solid red;
+
+      div {
+        text-align: center;
+        height: 20vw;
+        width: 30%;
+        margin:1vw 0;
+
+        img {
+          width: 90%;
+          height: 100%;
+
+          &:hover {
+            width: 100%;
+            height: 105%;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    h5 {
+      width: 85%;
+      margin: 0 auto;
+
+      span.mehr, p.showMehr {
+        font-size: 1.2vw;
+      }
+
+      span.mehr {
+        color: lime;
+
+        &:hover {
+          cursor: pointer;
+          color: blue;
+        }
+      }
+
+      p.showMehr {
+        display: none;
+
+        &:hover {
+          cursor: pointer;
+          color: blue;
+        }
+      }
+
+    }
+  }
+
+
+  // just carouselPart
+  div.carousel-container {
+    display: none;
+    background: cyan;
+    min-height: 100vh !important;
+
+    span.remove-carousel {
+      position: absolute;
+      top: 1vw;
+      right: 2vw;
+      font-size: 2vw;
+
+      &:hover {
+        color: red;
+        cursor: pointer;
+      }
+    }
+
+    div.carouselPart {
+      display: relative !important;
+      top: 5vw !important;
+      height: 500px !important;
+
+      div.contain-imageContainer {
+        height: 500px !important;
+
+        div.image-container {
+          height: 500px !important;
+
+           img {
+             height: 100% !important;
+             width: 100% !important;
+           }
+        }
+      }
+    }
+  }
+
+
+
+//   .carousel-inner img {
+//     width: 100%;
+//     height: 80%;
+// }
+
+
   // video part
   // div.video {
 

@@ -1,7 +1,4 @@
 
-$( document ).ready(function() {
-
-
 
   let sixSteps = document.querySelectorAll('div.image');
   let imageOfSteps = document.querySelectorAll('img.img-hover');
@@ -10,8 +7,12 @@ $( document ).ready(function() {
   let spanClose = document.querySelector('span.fixed-close');
   let spanCloseAll = document.querySelector('span.closeLightboxContainer');
   let bigImages = document.querySelectorAll('img.bigImages');
-  // let smallImages = document.querySelectorAll('img.smallImage');
-  // console.log(sixStepsContainer);
+  let repairPicturesArray = document.querySelectorAll('div.carousel-flex-image img');
+  let justCarouselPartContainer = document.querySelector('div.carousel-container');
+  let justCarouselPartImages = document.querySelectorAll('div.carouselPart img');
+  let carouselRemover = document.querySelector('span.remove-carousel');
+  let spanMehr = document.querySelector('span.mehr');
+  let paragraphMehr = document.querySelector('p.showMehr');
 
   let mainArray = [
     {identitiy: 'image flecken', src: 'images/teppisch-images/Flecken-entfernen/flecken-1.jpeg'},
@@ -127,12 +128,25 @@ $( document ).ready(function() {
   }
 
 
-  // repair js
-  // MDB Lightbox Init
-  $(function () {
-  $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
-  });
+// carouselPicturesContainer and just carousel section
+  for (let i=0; i<repairPicturesArray.length; i++) {
+    repairPicturesArray[i].addEventListener('click', event => {
+      justCarouselPartContainer.style.display= 'block';
+      justCarouselPartImages[i].src=ev.target.src;
 
+    })
+  }
 
+  carouselRemover.addEventListener('click', event => {
+    justCarouselPartContainer.style.display= 'none';
+  })
 
-});
+  spanMehr.addEventListener('click', event => {
+    paragraphMehr.style.display= 'block';
+    spanMehr.style.display= 'none';
+  })
+
+  paragraphMehr.addEventListener('click', event => {
+    spanMehr.style.display= 'block';
+    paragraphMehr.style.display= 'none';
+  })
