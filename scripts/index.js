@@ -10,20 +10,21 @@
   let repairPicturesArray = document.querySelectorAll('div.carousel-flex-image img');
   let justCarouselPartContainer = document.querySelector('div.carousel-container');
   let justCarouselPartImages = document.querySelectorAll('div.carouselPart img');
+  let justCarouselImages = document.querySelectorAll('div.image-container img');
   let carouselRemover = document.querySelector('span.remove-carousel');
   let spanMehr = document.querySelector('span.mehr');
   let paragraphMehr = document.querySelector('p.showMehr');
 
   let mainArray = [
-    {identitiy: 'image flecken', src: 'images/teppisch-images/Flecken-entfernen/flecken-1.jpeg'},
-    {identitiy: 'image flecken', src: 'images/teppisch-images/Flecken-entfernen/flecken-2.jpeg'},
-    {identitiy: 'image flecken', src: 'images/teppisch-images/Flecken-entfernen/flecken-3.jpeg'},
-    {identitiy: 'image flecken', src: 'images/teppisch-images/Flecken-entfernen/flecken-4.jpeg'},
+    {identitiy: 'image flecken', src: 'images/teppisch-images/staub/staub1.jpeg'},
+    {identitiy: 'image flecken', src: 'images/teppisch-images/staub/staub2.jpeg'},
+    {identitiy: 'image flecken', src: 'images/teppisch-images/staub/staub3.jpeg'},
+    {identitiy: 'image flecken', src: 'images/teppisch-images/staub/staub4.jpeg'},
 
-    {identitiy: 'image reparatur', src: 'images/teppisch-images/Reparatur/reparatur1.jpeg'},
-    {identitiy: 'image reparatur', src: 'images/teppisch-images/Reparatur/reparatur2.jpeg'},
-    {identitiy: 'image reparatur', src: 'images/teppisch-images/Reparatur/reparatur3.jpeg'},
-    {identitiy: 'image reparatur', src: 'images/teppisch-images/Reparatur/reparatur4.jpeg'},
+    {identitiy: 'image reparatur', src: 'images/teppisch-images/sorg/sorg1.jpeg'},
+    {identitiy: 'image reparatur', src: 'images/teppisch-images/sorg/sorg2.jpeg'},
+    {identitiy: 'image reparatur', src: 'images/teppisch-images/sorg/sorg3.jpeg'},
+    {identitiy: 'image reparatur', src: 'images/teppisch-images/sorg/sorg4.jpeg'},
 
     {identitiy: 'image sauna', src: 'images/teppisch-images/teppich-sauna/sauna1.jpeg'},
     {identitiy: 'image sauna', src: 'images/teppisch-images/teppich-sauna/sauna2.jpeg'},
@@ -35,10 +36,10 @@
     {identitiy: 'image kontrolle', src: 'images/teppisch-images/ende-kontrolle/ende-kontrolle3.jpeg'},
     {identitiy: 'image kontrolle', src: 'images/teppisch-images/ende-kontrolle/ende-kontrolle4.jpeg'},
 
-    {identitiy: 'image wash', src: 'images/teppisch-images/Wäscherei/wash1.jpeg'},
-    {identitiy: 'image wash', src: 'images/teppisch-images/Wäscherei/wash2.jpeg'},
-    {identitiy: 'image wash', src: 'images/teppisch-images/Wäscherei/wash3.jpeg'},
-    {identitiy: 'image wash', src: 'images/teppisch-images/Wäscherei/wash4.jpeg'},
+    {identitiy: 'image wash', src: 'images/teppisch-images/scleudern/scleudern1.jpeg'},
+    {identitiy: 'image wash', src: 'images/teppisch-images/scleudern/schleudern2.jpeg'},
+    {identitiy: 'image wash', src: 'images/teppisch-images/scleudern/schleudern3.jpeg'},
+    {identitiy: 'image wash', src: 'images/teppisch-images/scleudern/schleudern4.jpeg'},
 
     {identitiy: 'image lieferung', src: 'images/teppisch-images/lieferung/lieferung1.jpg'},
     {identitiy: 'image lieferung', src: 'images/teppisch-images/lieferung/lieferung2.jpg'},
@@ -130,10 +131,9 @@
 
 // carouselPicturesContainer and just carousel section
   for (let i=0; i<repairPicturesArray.length; i++) {
-    repairPicturesArray[i].addEventListener('click', event => {
+    repairPicturesArray[i].addEventListener('click', ev => {
       justCarouselPartContainer.style.display= 'block';
-      justCarouselPartImages[i].src=ev.target.src;
-
+      justCarouselImages[0].src=ev.target.src;
     })
   }
 
