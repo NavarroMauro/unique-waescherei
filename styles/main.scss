@@ -3,86 +3,77 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
-
-// WÄSCHEREI title
+  // WÄSCHEREI title
   div.waescherei {
     font-size: 2.5vw;
 
     @media screen and (max-width: 600px) {
-    font-size: 4.5vw;
+      font-size: 4.5vw;
     }
   }
 
   button {
     &:hover {
-      background-color: #3D1000;
+      background-color: #3d1000;
     }
   }
 
   div.main-6-level {
-
     div.main-6-level-text {
-
       h5 {
         padding: 3vw 0;
       }
     }
 
-
-
     // first-3-steps
-     div.first-3-level {
+    div.first-3-level {
+      div div.image {
+        height: 30vw;
 
-       div div.image {
-          height: 30vw;
+        &:hover {
+          cursor: pointer;
+        }
+
+        img {
+          height: 100%;
+          width: 100%;
 
           &:hover {
-            cursor: pointer;
+            filter: brightness(80%);
           }
+        }
 
-          img {
-            height: 100%;
-            width: 100%;
-
-            &:hover {
-              filter: brightness(120%);
-              border: 2px solid yellow;
-            }
-          }
-
-          @media screen and (max-width: 600px) {
-            height: 55vw;
-          }
-       }
-     }
+        @media screen and (max-width: 600px) {
+          height: 55vw;
+        }
+      }
+    }
   }
 
   .vert .carousel-item-next.carousel-item-left,
   .vert .carousel-item-prev.carousel-item-right {
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
-
-// starting picturs for carousel
+  // starting picturs for carousel
   div.carouselPicturesContainer {
     margin: 3vw 0;
 
     div.carouselPictures {
       width: 97%;
-      margin: 0 auto;;
+      margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      border: 2px solid red;
+      // border: 2px solid red;
 
       div {
         text-align: center;
         height: 20vw;
         width: 30%;
-        margin:1vw 0;
+        margin: 1vw 0;
 
         img {
           width: 90%;
@@ -101,16 +92,17 @@ body {
       width: 85%;
       margin: 0 auto;
 
-      span.mehr, p.showMehr {
+      span.mehr,
+      p.showMehr {
         font-size: 1.2vw;
       }
 
       span.mehr {
-        color: lime;
+        color: #A80900;
 
         &:hover {
           cursor: pointer;
-          color: blue;
+          // color: blue;
         }
       }
 
@@ -119,18 +111,16 @@ body {
 
         &:hover {
           cursor: pointer;
-          color: blue;
+          // color: blue;
         }
       }
-
     }
   }
-
 
   // just carouselPart
   div.carousel-container {
     display: none;
-    background: cyan;
+    background: white;
     min-height: 100vh !important;
 
     span.remove-carousel {
@@ -156,22 +146,19 @@ body {
         div.image-container {
           height: 500px !important;
 
-           img {
-             height: 100% !important;
-             width: 100% !important;
-           }
+          img {
+            height: 100% !important;
+            width: 100% !important;
+          }
         }
       }
     }
   }
 
-
-
-//   .carousel-inner img {
-//     width: 100%;
-//     height: 80%;
-// }
-
+  //   .carousel-inner img {
+  //     width: 100%;
+  //     height: 80%;
+  // }
 
   // video part
   // div.video {
@@ -194,30 +181,26 @@ body {
       margin: 0 auto;
 
       div {
-
         img.img-hover {
-
           &:hover {
-            border: 2px solid yellow;
+            border: 2px solid #A80900;
             filter: brightness(120%);
           }
         }
       }
 
       @media screen and (max-width: 750px) {
-      height: 700px;
-      padding-top: 12vw;
+        height: 700px;
+        padding-top: 12vw;
       }
 
       @media screen and (max-width: 450px) {
         height: 700px;
-      padding-top: 5vw;
+        padding-top: 5vw;
       }
     }
 
     h2.lightboxH2 {
-
-
       span.fixed-close {
         position: absolute;
         top: 5%;
@@ -229,14 +212,14 @@ body {
         }
 
         @media screen and (max-width: 450px) {
-             top: 5vw;
-             right: 9vw !important;
-           }
+          top: 5vw;
+          right: 9vw !important;
+        }
 
         @media screen and (max-width: 380px) {
-             top: 5vw;
-             right: 12vw !important;
-           }
+          top: 5vw;
+          right: 12vw !important;
+        }
       }
     }
 
@@ -293,7 +276,6 @@ body {
         height: 100%;
         background: black;
       }
-
     }
 
     // adding my style +++++++++++++++++++++++
@@ -327,14 +309,14 @@ body {
       z-index: 4;
 
       @media screen and (max-width: 450px) {
-           top: 5vw;
-           right: 9vw !important;
-         }
+        top: 5vw;
+        right: 9vw !important;
+      }
 
       @media screen and (max-width: 380px) {
-           top: 5vw;
-           right: 12vw !important;
-         }
+        top: 5vw;
+        right: 12vw !important;
+      }
     }
 
     .close:hover,
@@ -349,14 +331,13 @@ body {
 
       img {
         @media screen and (max-width: 750px) {
-        height: 100%;
-        width: 100%;
+          height: 100%;
+          width: 100%;
         }
       }
 
-
       @media screen and (max-width: 750px) {
-      height: 60vw !important;
+        height: 60vw !important;
       }
 
       @media screen and (max-width: 450px) {
@@ -392,7 +373,7 @@ body {
       border-radius: 0 3px 3px 0;
       user-select: none;
       -webkit-user-select: none;
-      background-color: rgba(255,255,255,.4);
+      background-color: rgba(255, 255, 255, 0.4);
 
       @media screen and (max-width: 450px) {
         padding: 5px 8px !important;
@@ -409,7 +390,7 @@ body {
     .prev:hover,
     .next:hover {
       // background-color: rgba(0, 0, 0, 0.8);
-      background-color: #3D1000;
+      background-color: #3d1000;
       color: white;
     }
 
@@ -447,39 +428,37 @@ body {
     }
 
     .hover-shadow:hover {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     @media screen and (max-width: 750px) {
-    height: 700px;
-    padding-top: 12vw;
+      height: 700px;
+      padding-top: 12vw;
     }
 
     @media screen and (max-width: 450px) {
       height: 700px;
-    padding-top: 40vw;
+      padding-top: 40vw;
     }
   }
   // #######################################################################################
 
-
-
   .vert .carousel-item-next,
   .vert .active.carousel-item-right {
-      -webkit-transform: translate3d(0, 100%, 0);
-              transform: translate3d(0, 100% 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100% 0);
   }
 
   .vert .carousel-item-prev,
   .vert .active.carousel-item-left {
-  -webkit-transform: translate3d(0,-100%, 0);
-          transform: translate3d(0,-100%, 0);
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
   }
-
 }
 
 span.title-img {
-  color: #A80900;
+  color: #a80900;
   font-weight: 900;
   font-size: 1.2rem;
 }
