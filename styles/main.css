@@ -114,9 +114,9 @@ body div.carousel-container {
 
 body div.carousel-container span.remove-carousel {
   position: absolute;
-  top: 1vw;
-  right: 2vw;
-  font-size: 2vw;
+  top: 2vw;
+  right: 11vw;
+  font-size: 3vw;
   z-index: 3;
 }
 
@@ -137,6 +137,7 @@ body div.carousel-container div.carouselPart {
   display: relative !important;
   top: 5vw !important;
   height: 500px !important;
+  margin: 0 15vw;
 }
 
 body div.carousel-container div.carouselPart div.contain-imageContainer {
@@ -166,7 +167,7 @@ body div.carousel-container div.carouselPart div.contain-imageContainer div.imag
 }
 
 body div.carousel-container span.two-arrows {
-  font-size: 12vw !important;
+  font-size: 15vw !important;
   width: 40px !important;
   height: 40px !important;
 }

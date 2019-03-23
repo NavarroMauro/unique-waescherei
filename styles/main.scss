@@ -125,9 +125,9 @@ body {
 
     span.remove-carousel {
       position: absolute;
-      top: 1vw;
-      right: 2vw;
-      font-size: 2vw;
+      top: 2vw;
+      right: 11vw;
+      font-size: 3vw;
       z-index: 3;
 
       &:hover {
@@ -146,6 +146,7 @@ body {
       display: relative !important;
       top: 5vw !important;
       height: 500px !important;
+      margin: 0 15vw;
 
       div.contain-imageContainer {
         height: 500px !important;
@@ -171,7 +172,7 @@ body {
     }
 
     span.two-arrows {
-      font-size: 12vw !important;
+      font-size: 15vw !important;
       width: 40px !important;
       height: 40px !important;
 
