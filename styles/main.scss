@@ -128,10 +128,17 @@ body {
       top: 1vw;
       right: 2vw;
       font-size: 2vw;
+      z-index: 3;
 
       &:hover {
         color: red;
-        cursor: pointer;
+        cursor: pointer !important;
+      }
+
+      @media screen and (max-width: 450px) {
+        font-size: 15vw;
+        top: 10vw;
+        right: 10vw;
       }
     }
 
@@ -150,20 +157,41 @@ body {
             height: 100% !important;
             width: 100% !important;
           }
+
+          @media screen and (max-width: 450px) {
+            height: 250px !important;
+            margin-top: 170px;
+          }
         }
+      }
+
+      @media screen and (max-width: 450px) {
+        height: 400px !important;
+      }
+    }
+
+    span.two-arrows {
+      font-size: 12vw !important;
+      width: 40px !important;
+      height: 40px !important;
+
+      @media screen and (max-width: 450px) {
+        position: relative !important;
+        top: 95px !important;
+        font-size: 12vw !important;
+        width: 40px !important;
+        height: 40px !important;
+      }
+    }
+
+    ul.the-indicators {
+
+      @media screen and (max-width: 450px) {
+        display: none;
       }
     }
   }
 
-  //   .carousel-inner img {
-  //     width: 100%;
-  //     height: 80%;
-  // }
-
-  // video part
-  // div.video {
-
-  // }
 
   // starting lightbox #################################################################
   div.lightboxContainer {

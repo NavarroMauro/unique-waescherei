@@ -1,6 +1,5 @@
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -36,8 +35,7 @@ body div.main-6-level div.first-3-level div div.image img {
 }
 
 body div.main-6-level div.first-3-level div div.image img:hover {
-  -webkit-filter: brightness(80%);
-          filter: brightness(80%);
+  filter: brightness(80%);
 }
 
 @media screen and (max-width: 600px) {
@@ -59,14 +57,9 @@ body div.carouselPicturesContainer {
 body div.carouselPicturesContainer div.carouselPictures {
   width: 97%;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 body div.carouselPicturesContainer div.carouselPictures div {
@@ -124,11 +117,20 @@ body div.carousel-container span.remove-carousel {
   top: 1vw;
   right: 2vw;
   font-size: 2vw;
+  z-index: 3;
 }
 
 body div.carousel-container span.remove-carousel:hover {
   color: red;
-  cursor: pointer;
+  cursor: pointer !important;
+}
+
+@media screen and (max-width: 450px) {
+  body div.carousel-container span.remove-carousel {
+    font-size: 15vw;
+    top: 10vw;
+    right: 10vw;
+  }
 }
 
 body div.carousel-container div.carouselPart {
@@ -150,13 +152,47 @@ body div.carousel-container div.carouselPart div.contain-imageContainer div.imag
   width: 100% !important;
 }
 
+@media screen and (max-width: 450px) {
+  body div.carousel-container div.carouselPart div.contain-imageContainer div.image-container {
+    height: 250px !important;
+    margin-top: 170px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body div.carousel-container div.carouselPart {
+    height: 400px !important;
+  }
+}
+
+body div.carousel-container span.two-arrows {
+  font-size: 12vw !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+@media screen and (max-width: 450px) {
+  body div.carousel-container span.two-arrows {
+    position: relative !important;
+    top: 95px !important;
+    font-size: 12vw !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body div.carousel-container ul.the-indicators {
+    display: none;
+  }
+}
+
 body div.lightboxContainer {
   position: fixed !important;
   z-index: 4;
   font-family: Verdana, sans-serif;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: none;
   background: white;
   /* The Modal (background) */
@@ -174,8 +210,7 @@ body div.lightboxContainer div.lightbox {
 
 body div.lightboxContainer div.lightbox div img.img-hover:hover {
   border: 2px solid #A80900;
-  -webkit-filter: brightness(120%);
-          filter: brightness(120%);
+  filter: brightness(120%);
 }
 
 @media screen and (max-width: 750px) {
@@ -326,12 +361,9 @@ body div.lightboxContainer .next {
   color: black;
   font-weight: bold;
   font-size: 40px;
-  -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
+  user-select: none;
   -webkit-user-select: none;
   background-color: rgba(255, 255, 255, 0.4);
 }
@@ -383,13 +415,11 @@ body div.lightboxContainer .demo:hover {
 }
 
 body div.lightboxContainer img.hover-shadow {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 body div.lightboxContainer .hover-shadow:hover {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media screen and (max-width: 750px) {
@@ -423,4 +453,3 @@ span.title-img {
   font-weight: 900;
   font-size: 1.2rem;
 }
-/*# sourceMappingURL=main.css.map */
