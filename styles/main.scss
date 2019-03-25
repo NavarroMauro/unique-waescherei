@@ -19,6 +19,25 @@ body {
     }
   }
 
+  // about section
+  div.main-about {
+
+    div.about-image {
+
+      @media screen and (max-width: 450px) {
+        width: 95vw !important;
+        margin-left: 1vw;
+      }
+    }
+
+    @media screen and (max-width: 450px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
   div.main-6-level {
     div.main-6-level-text {
       h5 {
@@ -95,6 +114,10 @@ body {
       span.mehr,
       p.showMehr {
         font-size: 1.2vw;
+
+        @media screen and (max-width: 450px) {
+          font-size: 4vw;
+        }
       }
 
       span.mehr {
