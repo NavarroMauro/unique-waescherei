@@ -163,6 +163,8 @@ body div.carousel-container div.carouselPart div.contain-imageContainer div.imag
 @media screen and (max-width: 450px) {
   body div.carousel-container div.carouselPart {
     height: 400px !important;
+    width: 358px;
+    margin: 0 1px;
   }
 }
 
