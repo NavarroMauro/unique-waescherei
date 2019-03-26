@@ -25,6 +25,18 @@ body button:hover {
 }
 
 @media screen and (max-width: 450px) {
+  body div.main-about div.about-text p.about-paragraph {
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body div.main-about div.about-text {
+    padding-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
   body div.main-about {
     display: flex;
     flex-direction: column;

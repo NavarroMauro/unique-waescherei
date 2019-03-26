@@ -30,6 +30,20 @@ body {
       }
     }
 
+    div.about-text {
+
+      p.about-paragraph {
+
+        @media screen and (max-width: 450px) {
+          width: 90% !important;
+        }
+      }
+
+      @media screen and (max-width: 450px) {
+        padding-left: 0 !important;
+      }
+    }
+
     @media screen and (max-width: 450px) {
       display: flex;
       flex-direction: column;
