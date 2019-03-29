@@ -8,12 +8,19 @@
   let spanCloseAll = document.querySelector('span.closeLightboxContainer');
   let bigImages = document.querySelectorAll('img.bigImages');
   let repairPicturesArray = document.querySelectorAll('div.carousel-flex-image img');
+  let fleckenPicturesArray = document.querySelectorAll('div.carousel-flex-image-flecken img');
   let justCarouselPartContainer = document.querySelector('div.carousel-container');
+  let justCarouselPartContainerFlecken = document.querySelector('div.carousel-container-flecken');
   let justCarouselPartImages = document.querySelectorAll('div.carouselPart img');
   let justCarouselImages = document.querySelectorAll('div.image-container img');
+  let justCarouselFleckenImages = document.querySelectorAll('div.image-container-flecken img');
   let carouselRemover = document.querySelector('span.remove-carousel');
+  let carouselRemoverFlecken = document.querySelector('span.remove-carousel-flecken');
   let spanMehr = document.querySelector('span.mehr');
+  let spanMehrFlecken = document.querySelector('span.mehr-flecken');
   let paragraphMehr = document.querySelector('p.showMehr');
+  let paragraphMehrFlecken = document.querySelector('p.showMehr-flecken');
+  
 
   let mainArray = [
     {identitiy: 'image flecken', src: 'images/teppisch-images/staub/staub1.jpeg'},
@@ -149,4 +156,26 @@
   paragraphMehr.addEventListener('click', event => {
     spanMehr.style.display= 'block';
     paragraphMehr.style.display= 'none';
+  })
+
+  // flecken part ############################
+  for (let i=0; i<fleckenPicturesArray.length; i++) {
+    fleckenPicturesArray[i].addEventListener('click', ev => {
+      justCarouselPartContainerFlecken.style.display= 'block';
+      justCarouselFleckenImages[0].src=ev.target.src;
+    })
+  }
+
+  carouselRemoverFlecken.addEventListener('click', event => {
+    justCarouselPartContainerFlecken.style.display= 'none';
+  })
+
+  spanMehrFlecken.addEventListener('click', event => {
+    paragraphMehrFlecken.style.display= 'block';
+    spanMehrFlecken.style.display= 'none';
+  })
+
+  paragraphMehrFlecken.addEventListener('click', event => {
+    spanMehrFlecken.style.display= 'block';
+    paragraphMehrFlecken.style.display= 'none';
   })
