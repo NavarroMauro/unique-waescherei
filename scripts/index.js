@@ -20,7 +20,11 @@
   let spanMehrFlecken = document.querySelector('span.mehr-flecken');
   let paragraphMehr = document.querySelector('p.showMehr');
   let paragraphMehrFlecken = document.querySelector('p.showMehr-flecken');
-  
+  let prevArrow = document.querySelector('a.prev-arrow');
+  let arrows = document.querySelectorAll('a.arrow span');
+  let imageContainerFelecken = document.querySelectorAll('div.image-container-flecken');
+  let counter=1;
+
 
   let mainArray = [
     {identitiy: 'image flecken', src: 'images/teppisch-images/staub/staub1.jpeg'},
@@ -158,13 +162,44 @@
     paragraphMehr.style.display= 'none';
   })
 
+
+
+
+
   // flecken part ############################
   for (let i=0; i<fleckenPicturesArray.length; i++) {
     fleckenPicturesArray[i].addEventListener('click', ev => {
       justCarouselPartContainerFlecken.style.display= 'block';
-      justCarouselFleckenImages[0].src=ev.target.src;
+      // justCarouselFleckenImages[0].src=ev.target.src;
     })
   }
+
+
+  for (let i=0; i<arrows.length; i++) {
+
+    arrows[i].addEventListener('click', ev => {
+      for (let j=0; j<imageContainerFelecken.length; j++) {
+        imageContainerFelecken[j].style.opacity='0';
+      }
+
+      let ident=ev.target.getAttribute('ident');
+      if (ident==='next') {
+        imageContainerFelecken[counter].style.opacity='1';
+        counter++;
+        if (counter>3) {
+          counter=0;
+        }
+      } else {
+        counter--;
+        if (counter<0) {
+          counter=3;
+        }
+        imageContainerFelecken[counter].style.opacity='1';
+      }
+      console.log(counter);
+    })
+  }
+
 
   carouselRemoverFlecken.addEventListener('click', event => {
     justCarouselPartContainerFlecken.style.display= 'none';
