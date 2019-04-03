@@ -1,5 +1,6 @@
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -38,10 +39,19 @@ body button:hover {
 
 @media screen and (max-width: 450px) {
   body div.main-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -63,7 +73,8 @@ body div.main-6-level div.first-3-level div div.image img {
 }
 
 body div.main-6-level div.first-3-level div div.image img:hover {
-  filter: brightness(80%);
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
 }
 
 @media screen and (max-width: 600px) {
@@ -85,9 +96,14 @@ body div.carouselPicturesContainer {
 body div.carouselPicturesContainer div.carouselPictures {
   width: 97%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body div.carouselPicturesContainer div.carouselPictures div {
@@ -230,7 +246,8 @@ body div.contain-imageContainer-flecken {
 }
 
 body div.contain-imageContainer-flecken:hover {
-  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 
 body div.contain-imageContainer-flecken div.image-container-flecken {
@@ -241,6 +258,7 @@ body div.contain-imageContainer-flecken div.image-container-flecken {
   opacity: 0;
   text-align: center;
   font-size: 4vw;
+  -webkit-transition: opacity .7s linear;
   transition: opacity .7s linear;
 }
 
@@ -254,7 +272,8 @@ body div.contain-imageContainer-flecken div.image-container-flecken:first-of-typ
 }
 
 body a.arrow {
-  filter: brightness(200%);
+  -webkit-filter: brightness(200%);
+          filter: brightness(200%);
 }
 
 body a.arrow:hover {
@@ -272,7 +291,8 @@ body a.arrow:hover {
 body a.arrow span.two-arrows {
   opacity: 1 !important;
   z-index: 3;
-  filter: brightness(200%);
+  -webkit-filter: brightness(200%);
+          filter: brightness(200%);
 }
 
 body div.lightboxContainer {
@@ -280,7 +300,8 @@ body div.lightboxContainer {
   z-index: 4;
   font-family: Verdana, sans-serif;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: none;
   background: white;
   /* The Modal (background) */
@@ -298,7 +319,8 @@ body div.lightboxContainer div.lightbox {
 
 body div.lightboxContainer div.lightbox div img.img-hover:hover {
   border: 2px solid #A80900;
-  filter: brightness(120%);
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
 }
 
 @media screen and (max-width: 750px) {
@@ -449,9 +471,12 @@ body div.lightboxContainer .next {
   color: black;
   font-weight: bold;
   font-size: 40px;
+  -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
   -webkit-user-select: none;
   background-color: rgba(255, 255, 255, 0.4);
 }
@@ -503,11 +528,13 @@ body div.lightboxContainer .demo:hover {
 }
 
 body div.lightboxContainer img.hover-shadow {
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 body div.lightboxContainer .hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media screen and (max-width: 750px) {
@@ -541,3 +568,4 @@ span.title-img {
   font-weight: 900;
   font-size: 1.2rem;
 }
+/*# sourceMappingURL=main.css.map */
