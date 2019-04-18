@@ -192,15 +192,15 @@ body div.carousel-container div.carouselPart {
 }
 
 body div.carousel-container div.carouselPart div.contain-imageContainer {
-  height: 500px !important;
+  height: 300px !important;
 }
 
 body div.carousel-container div.carouselPart div.contain-imageContainer div.image-container {
   height: 500px !important;
 }
 
-body div.carousel-container div.carouselPart div.contain-imageContainer div.image-container img {
-  height: 100% !important;
+body div.carousel-container div.carouselPart div.contain-imageContainer div.image-container img.img-6schritt {
+  height: 10% !important;
   width: 100% !important;
 }
 
