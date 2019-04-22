@@ -192,7 +192,7 @@ body div.carousel-container div.carouselPart {
 }
 
 body div.carousel-container div.carouselPart div.contain-imageContainer {
-  height: 300px !important;
+  height: 500px !important;
 }
 
 body div.carousel-container div.carouselPart div.contain-imageContainer div.image-container {
@@ -200,7 +200,7 @@ body div.carousel-container div.carouselPart div.contain-imageContainer div.imag
 }
 
 body div.carousel-container div.carouselPart div.contain-imageContainer div.image-container img.img-6schritt {
-  height: 10% !important;
+  height: 100% !important;
   width: 100% !important;
 }
 
