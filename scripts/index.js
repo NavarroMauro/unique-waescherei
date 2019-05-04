@@ -186,13 +186,13 @@
       if (ident==='next') {
         imageContainerFelecken[counter].style.opacity='1';
         counter++;
-        if (counter>3) {
+        if (counter>5) {
           counter=0;
         }
       } else {
         counter--;
         if (counter<0) {
-          counter=3;
+          counter=5;
         }
         imageContainerFelecken[counter].style.opacity='1';
       }
